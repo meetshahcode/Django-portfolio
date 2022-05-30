@@ -1,11 +1,10 @@
 
 from django.db import models
 
-class works(models.Model):
+class work(models.Model):
     #image
     image = models.ImageField(upload_to = 'images/')
     #id
-    works_id = models.AutoField(primary_key=True)
+    work_id = models.AutoField(primary_key=True)
     #summary
     summary = models.TextField()
-    
