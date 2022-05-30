@@ -7,3 +7,4 @@ class works(models.Model):
     #id
     works_id = models.AutoField(primary_key=True)
     summary = models.TextField()
+    
