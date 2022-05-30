@@ -1,3 +1,4 @@
 # Django-portfolio
 
-Personal Portfolio based on Django.
+This project based on Django, which is working as my personal portfolio. 
+
