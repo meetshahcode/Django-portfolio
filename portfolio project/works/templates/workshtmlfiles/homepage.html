@@ -27,7 +27,7 @@
 
     {% for work in works.all %}
     <div class="col">
-      <div class="card shadow-sm">
+      <div class="card">
 
         {% if not work.Image %}
         <svg class="bd-placeholder-img card-img-top"  src = "{{ work.image.url }}"
@@ -46,7 +46,7 @@
           </p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" href="{{  }}">View</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary" href=" /work/{{ work.Work_id }}">View</button>
               {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
             </div>
             <small class="text-muted">9 mins</small>
