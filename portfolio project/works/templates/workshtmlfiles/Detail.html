@@ -1,0 +1,35 @@
+{% extends "./base.html" %}
+
+{% load static %}
+{% block Mainview %}
+
+      <div class="col-lg-6 col-md-8 mx-auto">
+          {% if work.Image %}
+            <img src="{% static 'meet.jpg'%}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+          {% else %}
+            <svg class="bd-placeholder-img card-img-top"  src = "{{ work.image.url }}"
+            width="100%" height="225" xmlns="http://www.w3.org/2000/svg" 
+            role="img" aria-label="Placeholder: Thumbnail" 
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                Thumbnail</text></svg>
+          {% endif %}
+        <h1 class="fw-light text-white">{{work.Title}}</h1>
+        <p class="lead text-muted"></p>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" 
+            role="button" aria-expanded="true" aria-controls="collapseExample">More Details</a>
+        </p>
+    </div>
+        
+{% endblock %}
+{% block listView %} 
+<div  class="collapse" id = "collapseExample">
+<div class=""">
+<pre class="text">
+{{ work.Detail}}
+</pre>
+</div>
+</div>
+{% endblock %}
