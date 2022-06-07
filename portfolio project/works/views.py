@@ -6,6 +6,6 @@ def Homepage(request):
     works = work.objects
     return render(request,'workshtmlfiles/homepage.html',{'works':works})
 
-def deatil(request,Work_id):
+def detail(request,Work_id):
     work_obj = get_object_or_404(work,pk = Work_id)
     return render(request,'workshtmlfiles/Detail.html',{'work':work_obj})

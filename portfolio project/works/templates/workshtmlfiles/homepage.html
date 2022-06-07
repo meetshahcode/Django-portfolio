@@ -46,7 +46,7 @@
           </p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" href=" /work/{{ work.Work_id }}">View</button>
+              <a type="button" class="btn btn-sm btn-outline-secondary" href="{% url 'detail' work.Work_id %} ">View</a>
               {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
             </div>
             <small class="text-muted">9 mins</small>
