@@ -19,6 +19,5 @@ import works.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',works.views.hello,name = "hello"),
-    path('meet',works.views.meet,name = "meet")
+    path('',works.views.Homepage,name = "Homepage")
 ]

@@ -1,6 +1,8 @@
 
 from django.db import models
+"""
 
+"""
 class work(models.Model):
     #image
     Image = models.ImageField(upload_to = 'images/',null = True,blank=True)
